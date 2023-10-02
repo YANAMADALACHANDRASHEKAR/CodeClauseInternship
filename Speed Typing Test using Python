@@ -1,1 +1,27 @@
+import time
+import random
+
+def calculate_wpm(start_time, end_time, typed_text):
+    num_words = len(typed_text.split())
+    elapsed_minutes = (end_time - start_time) / 60
+    wpm = num_words / elapsed_minutes
+    return wpm
+
+def typing_test():
+    words = ["python", "keyboard", "mouse", "speed", "challenge", "programming", "coding", "developer", "hackathon", "algorithm"]
+    prompt_text = " ".join(random.sample(words, 10))  # Random prompt with 10 words
+    print("Type the following words:")
+    print(prompt_text)
+
+    input("Press Enter to start the test...")
+
+    start_time = time.time()
+    typed_text = input("Start typing: ")
+    end_time = time.time()
+
+    wpm = calculate_wpm(start_time, end_time, typed_text)
+    print(f"Your typing speed is: {wpm:.2f} WPM")
+
+if __name__ == "__main__":
+    typing_test()
 
