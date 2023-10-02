@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[28]:
-
-
 import smtplib
 from tkinter import *
 
@@ -60,5 +54,3 @@ status_label.pack()
 
 root.mainloop()
 
-
-# 
