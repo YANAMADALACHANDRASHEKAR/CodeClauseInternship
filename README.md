@@ -1,2 +1,2 @@
-# CodeClauseInternship_MusicPlayer
+# CodeClauseInternship
 Music Player Using Python
